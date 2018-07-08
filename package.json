@@ -1,0 +1,63 @@
+{
+  "name": "rub-format",
+  "version": "2.0.0",
+  "description": "Format prices in rubles",
+  "module": "src/index.es6.js",
+  "main": "src/index.js",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "babel src/index.es6.js --out-file src/index.js",
+    "test": "jest",
+    "lint": "esw -w src test"
+  },
+  "author": "bonus.tm@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.5",
+    "babel-jest": "^23.2.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "eslint": "^5.0.1",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jest": "^21.17.0",
+    "esm": "^3.0.63",
+    "jest": "^23.3.0",
+    "rimraf": "^2.6.2"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "babel": {
+    "plugins": [
+      "transform-es2015-modules-commonjs"
+    ]
+  },
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "plugins": [
+      "import",
+      "jest"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 2017,
+      "sourceType": "module"
+    },
+    "env": {
+      "node": true,
+      "jest": true
+    },
+    "extends": [
+      "eslint:recommended"
+    ],
+    "rules": {
+      "jest/no-focused-tests": 2,
+      "jest/no-identical-title": 2,
+      "no-console": "off"
+    }
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
