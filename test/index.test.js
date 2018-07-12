@@ -1,5 +1,16 @@
 const rubFormat = require('../src')
 
+
+test('"0" → "0"', () => {
+  expect(rubFormat.rubFormatWithSpaces('0')).toBe('0')
+})
+test('"25" → "25"', () => {
+  expect(rubFormat.rubFormatWithSpaces('25')).toBe('25')
+})
+test('"10500" → "10 500"', () => {
+  expect(rubFormat.rubFormatWithSpaces('10500')).toBe('10 500')
+})
+
 test('0 → "0"', () => {
   expect(rubFormat.rubFormatWithSpaces(0)).toBe('0')
 })

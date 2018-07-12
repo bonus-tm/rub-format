@@ -33,7 +33,7 @@ const split = value => {
 /**
  * Форматирует пробелами цену в рублях
  *
- * @param {number} value
+ * @param {number|string} value
  * @returns {string}
  */
 const rubFormatWithSpaces = exports.rubFormatWithSpaces = value => {
@@ -45,7 +45,7 @@ const rubFormatWithSpaces = exports.rubFormatWithSpaces = value => {
 /**
  * Форматирует пробелами цену в рублях с копейками
  *
- * @param {number} value
+ * @param {number|string} value
  * @returns {string}
  */
 const rubKopFormatWithSpaces = exports.rubKopFormatWithSpaces = value => {
@@ -58,7 +58,7 @@ const rubKopFormatWithSpaces = exports.rubKopFormatWithSpaces = value => {
  * Форматирует в html цену в рубях с отступами в span'ах,
  * чтобы легко было выделять и копировать
  *
- * @param {number} value
+ * @param {number|string} value
  * @return {string}
  */
 const rubHtml = exports.rubHtml = value => {
@@ -72,7 +72,7 @@ const rubHtml = exports.rubHtml = value => {
  * с отступами в span'ах и копейками помельче шрифтом,
  * чтобы легко было выделять и копировать
  *
- * @param value
+ * @param {number|string} value
  * @return {string}
  */
 const rubKopHtml = exports.rubKopHtml = value => {
