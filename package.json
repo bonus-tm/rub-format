@@ -1,5 +1,5 @@
 {
-  "name": "rub-format",
+  "name": "@khmer/rub-format",
   "version": "2.2.0",
   "description": "Format prices in rubles",
   "module": "src/index.es6.js",
@@ -16,9 +16,9 @@
   "license": "ISC",
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "babel-jest": "^23.2.0",
+    "babel-jest": "^23.6.0",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
-    "jest": "^23.3.0"
+    "jest": "^23.6.0"
   },
   "browserslist": [
     "> 1%",
