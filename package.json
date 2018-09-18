@@ -1,6 +1,6 @@
 {
   "name": "@khmer/rub-format",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "description": "Format prices in rubles",
   "module": "src/index.es6.js",
   "main": "src/index.js",
