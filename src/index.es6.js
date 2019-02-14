@@ -15,9 +15,9 @@ const split = value => {
   let kop = Math.round((value - rub) * 100).toString().padStart(2, '0')
 
   let parts = []
-  if (rub > B) parts.push(Math.trunc(rub / B))
-  if (rub > M) parts.push(Math.trunc(rub % B / M))
-  if (rub > K) parts.push(Math.trunc(rub % M / K))
+  if (rub >= B) parts.push(Math.trunc(rub / B))
+  if (rub >= M) parts.push(Math.trunc(rub % B / M))
+  if (rub >= K) parts.push(Math.trunc(rub % M / K))
   parts.push(Math.trunc(rub % K))
 
   parts = parts.map((part, i) => i > 0 ? part.toString().padStart(3, '0') : part.toString())

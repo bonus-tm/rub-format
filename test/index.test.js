@@ -72,6 +72,9 @@ test('5.30 → "5,30"', () => {
 test('5800.4 → "5 800,40"', () => {
   expect(rubFormat.rubKopFormatWithSpaces(5800.4)).toBe('5 800,40')
 })
+test('1000 → "1 000,00"', () => {
+  expect(rubFormat.rubKopFormatWithSpaces(1000)).toBe('1 000,00')
+})
 test('10000.30 → "10 000,30"', () => {
   expect(rubFormat.rubKopFormatWithSpaces(10000.30)).toBe('10 000,30')
 })
